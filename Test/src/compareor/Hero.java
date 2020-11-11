@@ -1,14 +1,15 @@
 package compareor;
 
+
 public class Hero implements Comparable{
     public int hp;
     public int ap;
     public String name;
-    private Hero o;
+    
 
-    public Hero(int hp, int ap, String name) {
-        this.hp = hp;
-        this.ap = ap;
+    public Hero(int d, int e, String name) {
+        this.hp = d;
+        this.ap = e;
         this.name = name;
     }
 
@@ -25,7 +26,4 @@ public class Hero implements Comparable{
             return 1;
         }
     }
-
-   
-    
 }
