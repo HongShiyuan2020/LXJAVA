@@ -9,7 +9,6 @@ public class Lianxi4 {
     public static void main(String[] args) {
         ArrayList<Hero> arrayList = new ArrayList<>();
         Lianxi2.construct(arrayList, 10);
-        int [] as = new int[arrayList.size()];
         Object[] hs = arrayList
             .stream()
             .sorted((h1,h2)-> h2.hp-h1.hp)

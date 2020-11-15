@@ -1,6 +1,6 @@
 package compareor;
 
-public class Hero implements Comparable {
+public class Hero implements Comparable<Hero>{
     public int hp;
     public int ap;
     public String name;
@@ -15,7 +15,6 @@ public class Hero implements Comparable {
         try {
             Thread.sleep(500);
         } catch (InterruptedException e) {
-            // TODO Auto-generated catch block
             e.printStackTrace();
         }
         enemy.hp -= 100;
@@ -31,11 +30,15 @@ public class Hero implements Comparable {
     }
 
     @Override
-    public int compareTo(Object o) {		
+    public int compareTo(Hero o) {
         if (hp < ((Hero)o).hp) {
             return -1;
         }else{
             return 1;
         }
+    }
+
+    public static void BuoDongQuan(int i) {
+        System.out.println("BuoDongQuan_"+i);
     }
 }

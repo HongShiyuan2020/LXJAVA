@@ -5,12 +5,12 @@ import java.util.Collections;
 
 import compareor.Hero;
 
-public class Node<T extends Comparable> {
+public class Node<T extends Comparable<T>> {
     public Node<T> LeftNode; 
     public Node<T> RightNode;
-    public Object value;
+    public T value;
 
-    public void add(Object a) {
+    public void add(T a) {
         if (value == null) {
             value = a;
         }else{
