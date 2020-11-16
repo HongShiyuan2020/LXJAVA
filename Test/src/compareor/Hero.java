@@ -41,4 +41,12 @@ public class Hero implements Comparable<Hero>{
     public static void BuoDongQuan(int i) {
         System.out.println("BuoDongQuan_"+i);
     }
+
+    public void hurt() {
+        this.hp--;
+    }
+
+    public void recover() {
+        this.hp++;
+    }
 }
