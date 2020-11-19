@@ -21,7 +21,6 @@ public class Zuoye11_15_2 {
 
     public static void main(String[] args) {
         String code = codeString();
-        int c = 0;
         List<String> log = new ArrayList<>();
         Thread pojie = new Thread() {
             @Override
@@ -47,7 +46,6 @@ public class Zuoye11_15_2 {
                     try {
                         Thread.sleep(1000);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
                 }

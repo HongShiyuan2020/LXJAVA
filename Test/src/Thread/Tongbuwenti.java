@@ -21,7 +21,6 @@ public class Tongbuwenti {
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
 
@@ -39,7 +38,6 @@ public class Tongbuwenti {
                     try {
                         Thread.sleep(100);
                     } catch (InterruptedException e) {
-                        // TODO Auto-generated catch block
                         e.printStackTrace();
                     }
 
@@ -53,7 +51,6 @@ public class Tongbuwenti {
             try {
                 thread.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }
@@ -62,7 +59,6 @@ public class Tongbuwenti {
             try {
                 thread.join();
             } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
                 e.printStackTrace();
             }
         }

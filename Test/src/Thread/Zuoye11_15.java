@@ -2,11 +2,9 @@ package Thread;
 
 import java.util.Scanner;
 
-import compareor.Hero;
 
 public class Zuoye11_15 {
     public static void main(String[] args) {
-        Hero aHero = new Hero(1000, 2333, "Temo");
 
         Thread aThread = new Thread(){
             @Override
